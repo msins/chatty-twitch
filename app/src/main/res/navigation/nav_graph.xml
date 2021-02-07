@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/multipleChatFragment">
+
+    <fragment
+        android:id="@+id/multipleChatFragment"
+        android:name="edu.fer.unizg.msins.chatty.chats.MultipleChatsFragment"
+        android:label="MultipleChatFragment" >
+        <action
+            android:id="@+id/action_multipleChatFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_multipleChatFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="edu.fer.unizg.msins.chatty.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_multipleChatFragment"
+            app:destination="@id/multipleChatFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_loginFragment_to_twitchLoginFragment"
+            app:destination="@id/twitchLoginFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/twitchLoginFragment"
+        android:name="edu.fer.unizg.msins.chatty.login.TwitchLoginFragment"
+        android:label="TwitchLoginFragment" >
+        <action
+            android:id="@+id/action_twitchLoginFragment_to_multipleChatFragment"
+            app:destination="@id/multipleChatFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_twitchLoginFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="edu.fer.unizg.msins.chatty.profile.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_multipleChatFragment"
+            app:destination="@id/multipleChatFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+</navigation>

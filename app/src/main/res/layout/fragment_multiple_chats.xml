@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="multipleChatsViewModel"
+            type="edu.fer.unizg.msins.chatty.chats.MultipleChatsViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".chats.MultipleChatsFragment">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:colorPrimary" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/chat_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="auto"
+            app:tabTextAppearance="@style/Chatty.TabLayout.TextAppearance"
+            app:tabIndicatorColor="@color/lighter_gray"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabUnboundedRipple="true" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/chat_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+</layout>

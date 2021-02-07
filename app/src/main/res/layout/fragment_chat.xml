@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+            <ProgressBar
+                android:id="@+id/chat_placeholder_animation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chat_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/scroll_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_scroll_down"
+                android:backgroundTint="@color/dark_gray"
+                android:visibility="invisible"
+                app:borderWidth="0dp"
+                app:layout_anchor="@id/chat_recycler_view"
+                app:layout_anchorGravity="bottom|right" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/editTextBackground" />
+
+        <include
+            android:id="@+id/chat_input"
+            layout="@layout/fragment_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+</layout>

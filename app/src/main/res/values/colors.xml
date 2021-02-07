@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">@color/light_gray</color>
+    <color name="color_primary_dark">@color/twitch_color</color>
+    <color name="color_on_secondary">@android:color/black</color>
+
+    <color name="color_control_light">#2EFFFFFF</color> <!-- 18% white -->
+    <color name="colors_primary">#1976D2</color>
+    <color name="secondary">#F57C00</color>
+    <color name="error">#E53935</color>
+
+    <color name="dark_gray">#121212</color>
+    <color name="darker_gray">#23272A</color>
+    <color name="light_gray">#2C2C2C</color>
+    <color name="lighter_gray">#99AAB5</color>
+    <color name="twitch_color">#9146FF</color>
+</resources>

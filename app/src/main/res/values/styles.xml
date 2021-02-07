@@ -1,0 +1,65 @@
+<resources>
+
+    <style name="Widget.Chatty" parent="@android:style/Widget.Material" />
+
+    <style name="Widget.Chatty.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:paddingEnd">8dp</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Chatty.ToolbarTitle</item>
+    </style>
+
+    <style name="TextAppearance.Chatty.ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">@font/roboto_italic</item>
+    </style>
+
+    <style name="ActionButton.Overflow.Icon" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more_vert</item>
+    </style>
+
+    <style name="Widget.Chatty.TabLayout" parent="@style/Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicator">@drawable/tab_indicator</item>
+    </style>
+
+    <style name="Chatty.TabLayout.TextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <!--    <style name="DarkThemeApp" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">-->
+    <!--        <item name="colorPrimary">@color/lighter_gray</item>-->
+    <!--        <item name="colorPrimaryDark">@color/dark_gray</item>-->
+    <!--        <item name="colorSecondary">@color/lighter_gray</item>-->
+    <!--        <item name="colorError">@color/error</item>-->
+    <!--        <item name="android:textColor">@color/lighter_gray</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="AppTheme" parent="ThemeParent">-->
+    <!--        <item name="colorPrimary">@android:color/white</item>-->
+    <!--        <item name="colorPrimaryDark">@color/dark_gray</item>-->
+    <!--        <item name="colorAccent">@color/darker_gray</item>-->
+    <!--        <item name="rippleColor">@color/light_gray</item>-->
+    <!--        <item name="android:actionOverflowMenuStyle">@style/AppTheme.PopupOverlay.Light</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="AppTheme.Dark" parent="ThemeParent.Dark">-->
+    <!--        <item name="colorPrimary">@color/light_gray</item>-->
+    <!--        <item name="colorPrimaryDark">@color/dark_gray</item>-->
+    <!--        <item name="colorAccent">@color/darker_gray</item>-->
+    <!--        <item name="rippleColor">@color/light_gray</item>-->
+    <!--&lt;!&ndash;        <item name="md_corner_radius">16dp</item>&ndash;&gt;-->
+    <!--        <item name="android:actionOverflowMenuStyle">@style/AppTheme.PopupOverlay.Dark</item>-->
+    <!--    </style>-->
+
+    <!--    </style>-->
+    <!--    <style name="AppTheme" parent="Theme.MaterialComponents">-->
+    <!--    <item name="colorPrimary">@color/primary</item>-->
+    <!--    <item name="colorPrimaryDark">@color/primary_dark</item>-->
+    <!--    <item name="colorAccent">@color/accent</item>-->
+    <!--        <item name="md_background_color">@color/darker_gray</item>-->
+    <!--        &lt;!&ndash;        <item name="android:itemTextAppearance">@style/MenuItemTextAppearance</item>&ndash;&gt;-->
+    <!--    </style>-->
+
+    <!--    <style name="MenuItemTextAppearance">-->
+    <!--        <item name="android:textStyle">bold</item>-->
+    <!--    </style>-->
+
+
+</resources>
