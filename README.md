@@ -1,4 +1,4 @@
-Android and Kotlin learning project I did in 2019 for a university class seminar. It's a Twitch chat app with FrankerFaceZ and BetterTTV emotes integration. Project was super rushed so there are bad practices and anti-patterns all over the code.
+Android and Kotlin learning project I did in june 2020 for a university class seminar. It's a Twitch chat app with FrankerFaceZ and BetterTTV emotes integration. Project was super rushed so there are bad practices and anti-patterns all over the code.
 #
 Due to changes in twitch and Bttv API which happened since then, emotes don't work in anonymous mode and Bttv emotes won't download.
 #
